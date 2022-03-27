@@ -1,0 +1,105 @@
+h1{
+   text-align: center;
+   font-style: italic;
+}
+
+h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+body{
+    background-color: lightblue;
+}
+.navbar {
+    overflow: hidden;
+    padding:0;
+    margin:0;
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: lightcoral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+  }
+  .navbar img {
+      float:left;
+      vertical-align: top;
+      width: 80px;
+      height: 70px;
+      margin: 0;
+      padding: 0;
+      top:0;
+  }
+
+.navbar a:hover{
+    background-color: rgb(153, 197, 241);
+}
+  
+.divq {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    transition: width 2s linear 1s;
+  }
+  
+.divq:hover {
+    width: 300px;
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+ 
+ .flex-container > div {
+  flex-grow:1/1;
+  margin: 10px;
+  padding: 30px;
+  line-height: 75px;
+  font-size: 20px;
+  background-color: rgb(153, 197, 241);
+
+}
+
+.flex-container::before {
+    content:url("https://www.paintthekitchenred.com/wp-content/uploads/2017/07/Instant-Pot-Ratatouille-Ingredients-Paint-the-Kitchen-Red-1024x768.jpg");
+}
+.flex-container::after
+{
+   content: url("https://i.pinimg.com/originals/ea/22/95/ea229574743deb586312205212be17d2.jpg");
+}
+
+.divtr{
+        width: 200px;
+        height: 70px;
+        background: coral;
+        color: skyblue;
+        font-weight: bold;
+        transition: width 2s;
+}
+
+.divtr:hover {
+    width: 700px;
+}
+
+@media screen and (max-width: 480px) {
+    .div.tr {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    h2,h3 {
+      font-size: 15px;
+    }
+  }
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+
